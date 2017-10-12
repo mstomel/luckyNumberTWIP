@@ -9,8 +9,6 @@ public class Main {
         System.out.println("press 0 to exit, 1 to print lucky number, 2 to get a new number");
         while (true) {
 
-            System.out.println("What is your name?");
-            String n = in.next();
             System.out.println("What would you like to do next?");
             int i = in.nextInt();
             lucky test = new lucky();
@@ -23,7 +21,8 @@ public class Main {
             }
             else if (i == 1) {
 
-
+                System.out.println("What is your name?");
+                String n = in.next();
                 System.out.println("Nice to meet you "+ n +"! Your lucky number is "+ test.perfectRandom() + ".");
 
 
